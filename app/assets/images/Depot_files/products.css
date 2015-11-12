@@ -1,0 +1,46 @@
+/* line 5, /Users/thanhdaoduy/Ruby/rails/depot/app/assets/stylesheets/products.scss */
+.products table {
+  border-collapse: collapse;
+}
+/* line 9, /Users/thanhdaoduy/Ruby/rails/depot/app/assets/stylesheets/products.scss */
+.products table tr td {
+  padding: 5px;
+  vertical-align: top;
+}
+/* line 14, /Users/thanhdaoduy/Ruby/rails/depot/app/assets/stylesheets/products.scss */
+.products .list_image {
+  width: 60px;
+  height: 70px;
+}
+/* line 19, /Users/thanhdaoduy/Ruby/rails/depot/app/assets/stylesheets/products.scss */
+.products .list_description {
+  width: 60%;
+}
+/* line 22, /Users/thanhdaoduy/Ruby/rails/depot/app/assets/stylesheets/products.scss */
+.products .list_description dl {
+  margin: 0;
+}
+/* line 26, /Users/thanhdaoduy/Ruby/rails/depot/app/assets/stylesheets/products.scss */
+.products .list_description dt {
+  color: #244;
+  font-weight: bold;
+  font-size: larger;
+}
+/* line 32, /Users/thanhdaoduy/Ruby/rails/depot/app/assets/stylesheets/products.scss */
+.products .list_description dd {
+  margin: 0;
+}
+/* line 38, /Users/thanhdaoduy/Ruby/rails/depot/app/assets/stylesheets/products.scss */
+.products .list_actions {
+  font-size: x-small;
+  text-align: right;
+  padding-left: 1em;
+}
+/* line 44, /Users/thanhdaoduy/Ruby/rails/depot/app/assets/stylesheets/products.scss */
+.products .list_line_even {
+  background: #e0f8f8;
+}
+/* line 48, /Users/thanhdaoduy/Ruby/rails/depot/app/assets/stylesheets/products.scss */
+.products .list_line_odd {
+  background: #f8b0f8;
+}
