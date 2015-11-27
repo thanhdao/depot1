@@ -76,5 +76,28 @@ class ProductTest < ActiveSupport::TestCase
   	  assert product.invalid?
   end
 
+  test "product price must less than 1000" do
+      product = Product.new(title: "Dummy",
+                          description: "yyy",
+                          image_url: "fred.gif")
+      product.price = 1000
+      assert product.invalid?
+      assert_equal ["must be less than or equal to 999"], product.errors[:price]
+  end
 
+  test "product is not valid without a unique image url" do
+
+      product = new_product(products(:ruby).image_url)
+      assert product.invalid?
+      assert_equal ["has already been taken"], product.errors[:image_url]
+
+  end
+
+  private
+    def new_product(image_url)
+       Product.new(title: "Book title",
+                            description: "yyy",
+                            price: 1,
+                            image_url: image_url)
+    end
 end
